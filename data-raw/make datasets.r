@@ -4,5 +4,5 @@ GICS <- tibble::as.tibble(readxl::read_xlsx(path = "data-raw/data.xlsx", sheet =
 usethis::use_data(GICS, overwrite = TRUE)
 
 usethis::use_cc0_license()
-
-
+usethis::use_travis()
+usethis::use_appveyor()
