@@ -18,6 +18,6 @@ devtools::install_github(repo = "GICS", username = "bautheac")
 
 ``` r
 library(GICS)
-data(list = c("GICS"), package = "GICS", envir = environment())
+data(list = c("standards"), package = "GICS", envir = environment())
 ```
 

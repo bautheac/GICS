@@ -44,4 +44,4 @@
 #'
 #' @importClassesFrom data.table data.table
 #'
-"GICS"
+"standards"
