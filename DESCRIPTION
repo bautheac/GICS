@@ -6,11 +6,9 @@ Description: Global Industry Classification Standard conveniently packaged for c
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
 Suggests:
-  finRes,
   pullit,
   storethat
 Remotes:
-  bautheac/finRes,
   bautheac/pullit,
   bautheac/storethat
 License: CC0
