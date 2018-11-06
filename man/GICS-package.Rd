@@ -11,7 +11,7 @@ Global Industry Classification Standard conveniently packaged for consumption in
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/bautheac/GICS}
+  \item \url{https://bautheac.github.io/GICS}
   \item Report bugs at \url{https://github.com/bautheac/GICS/issues}
 }
 
