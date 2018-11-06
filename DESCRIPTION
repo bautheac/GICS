@@ -1,17 +1,15 @@
 Package: GICS
 Title: Global Industry Classification Standard dataset
-Version: 0.0.0.9000
-Authors@R: person("Olivier", "Bautheac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
+Version: 0.0.1.0
+Authors@R: person("Olivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
 Description: Global Industry Classification Standard conveniently packaged for consumption in R.
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
-Suggests:
-  pullit,
-  storethat
-Remotes:
-  bautheac/pullit,
-  bautheac/storethat
+Suggests: finRes
+Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no
 RoxygenNote: 6.1.0
+URL: https://github.com/bautheac/GICS
+BugReports: https://github.com/bautheac/GICS/issues

@@ -8,8 +8,16 @@
 \description{
 Global Industry Classification Standard conveniently packaged for consumption in R.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/bautheac/GICS}
+  \item Report bugs at \url{https://github.com/bautheac/GICS/issues}
+}
+
+}
 \author{
-\strong{Maintainer}: Olivier Bautheac \email{o.bautheac@gmail.com}
+\strong{Maintainer}: Olivier Bauthéac \email{o.bautheac@gmail.com}
 
 }
 \keyword{internal}

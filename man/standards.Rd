@@ -38,7 +38,7 @@ The Global Industry Classification Standard (GICS) is a
   & Poor's. The GICS methodology is used by the MSCI indexes, which
   include domestic and international stocks, as well as by a large
   portion of the professional investment management
-  community.The GICS hierarchy begins with 11 sectors and is followed
+  community. The GICS hierarchy begins with 11 sectors and is followed
   by 24 industry groups, 68 industries, and 157 sub-industries.
   Each stock that is classified will have a coding at all four of these
   levels.
