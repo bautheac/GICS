@@ -1,17 +1,33 @@
 GICS
 ================
 
-[![Build Status](https://travis-ci.com/bautheac/GICS.svg?branch=master)](https://travis-ci.com/bautheac/GICS) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/bautheac/GICS?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/GICS)
+[![Build
+Status](https://travis-ci.com/bautheac/GICS.svg?branch=master)](https://travis-ci.com/bautheac/GICS)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/bautheac/GICS?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/GICS)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <style> body {text-align: justify} </style>
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-GICS
-----
 
-GICS packages the Global Industry Classification Standard (GICS) dataset for consumption in R. It can be installed from [github](https://github.com/bautheac/GICS/) using: `devtools::install_github("bautheac/GICS")`.
-The GICS is a standardized classification system for equities developed jointly by Morgan Stanley Capital International (MSCI) and Standard & Poor's. The GICS methodology is used by the MSCI indexes, which include domestic and international stocks, as well as by a large portion of the professional investment management community. The GICS hierarchy begins with 11 sectors and is followed by 24 industry groups, 68 industries, and 157 sub-industries. Each stock that is classified will have a coding at all four of these levels.
+## GICS
 
-Excerpt of the 'standards' dataset:
+GICS packages the Global Industry Classification Standard (GICS) dataset
+for consumption in R. It can be installed from
+[github](https://github.com/bautheac/GICS/) using:
+`devtools::install_github("bautheac/GICS")`.  
+The GICS is a standardized classification system for equities developed
+jointly by Morgan Stanley Capital International (MSCI) and Standard &
+Poor’s. The GICS methodology is used by the MSCI indexes, which include
+domestic and international stocks, as well as by a large portion of the
+professional investment management community. The GICS hierarchy begins
+with 11 sectors and is followed by 24 industry groups, 68 industries,
+and 157 sub-industries. Each stock that is classified will have a coding
+at all four of these levels.
+
+Excerpt of the ‘standards’
+    dataset:
 
     #>   sector id sector name industry group id industry group name industry id
     #> 1        10      Energy              1010              Energy      101010
@@ -44,4 +60,8 @@ Excerpt of the 'standards' dataset:
 
 ### finRes
 
-Although GICS is self-contained with consumption value on its own, it belongs to [finRes](https://bautheac.github.io/finRes/) where it plays an important role in providing support to [storethat](https://github.io/bautheac/storethat/) for facilitating data integrity.
+Although GICS is self-contained with consumption value on its own, it
+belongs to [finRes](https://bautheac.github.io/finRes/) where it plays
+an important role in providing support to
+[storethat](https://github.io/bautheac/storethat/) for facilitating data
+integrity.
