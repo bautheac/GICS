@@ -14,7 +14,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/bautheac/GICS?branch=
 ## GICS
 
 GICS packages the Global Industry Classification Standard (GICS) dataset
-for consumption in R. It can be installed from
+for consumption in R. Install the development version from
 [github](https://github.com/bautheac/GICS/) using:
 `devtools::install_github("bautheac/GICS")`.  
 The GICS is a standardized classification system for equities developed
@@ -61,7 +61,5 @@ Excerpt of the ‘standards’
 ### finRes
 
 Although GICS is self-contained with consumption value on its own, it
-belongs to [finRes](https://bautheac.github.io/finRes/) where it plays
-an important role in providing support to
-[storethat](https://github.io/bautheac/storethat/) for facilitating data
-integrity.
+belongs to [finRes](https://bautheac.github.io/finRes/) where it helps
+with data wrangling and exploration.
