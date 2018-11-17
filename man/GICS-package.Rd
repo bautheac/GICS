@@ -6,7 +6,7 @@
 \alias{GICS-package}
 \title{GICS: Global Industry Classification Standard dataset}
 \description{
-Global Industry Classification Standard conveniently packaged for consumption in R.
+Global Industry Classification Standard dataset conveniently packaged for consumption in R.
 }
 \seealso{
 Useful links:

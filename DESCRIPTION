@@ -10,6 +10,6 @@ Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 URL: https://bautheac.github.io/GICS
 BugReports: https://github.com/bautheac/GICS/issues
