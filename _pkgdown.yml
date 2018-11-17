@@ -1,0 +1,17 @@
+title: GICS
+
+url: https://bautheac.github.io/GICS
+
+reference:
+  - title: Global Industry Classification Standard dataset
+    contents:
+      - standards
+
+navbar:
+  title: ~
+  type: default
+  left:
+    - text: home
+      href: index.html
+    - text: datasets
+      href: reference/index.html
