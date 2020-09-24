@@ -1,17 +1,11 @@
 GICS
 ================
 
-[![Build
-Status](https://travis-ci.com/bautheac/GICS.svg?branch=master)](https://travis-ci.com/bautheac/GICS)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/bautheac/GICS?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/GICS)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <style> body {text-align: justify} </style>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-## GICS
 
 GICS packages the Global Industry Classification Standard (GICS) dataset
 for consumption in R. Install the development version from
@@ -54,4 +48,4 @@ Excerpt of the ‘standards’ dataset:
 
 Although GICS is self-contained with consumption value on its own, it
 belongs to [finRes](https://bautheac.github.io/finRes/) where it helps
-with data wrangling and exploration.
+with data wrangling and analysis.
