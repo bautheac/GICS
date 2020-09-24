@@ -4,7 +4,8 @@
 \name{standards}
 \alias{standards}
 \title{Global industry classification standard (GICS)}
-\format{A \linkS4class{data.table}. Columns include:
+\format{
+A \linkS4class{data.table}. Columns include:
 
 \itemize{
 
@@ -24,7 +25,8 @@
 
   \item{\code{subindustry name}: integer. Correspondig GICS subindustry name.}
 
-}}
+}
+}
 \source{
 \url{https://www.msci.com}
 }

@@ -1,7 +1,8 @@
-pandoc: 2.3.1
-pkgdown: 1.1.0
+pandoc: 2.7.3
+pkgdown: 1.6.1
 pkgdown_sha: ~
-articles: []
+articles: {}
+last_built: 2020-09-24T08:50Z
 urls:
   reference: https://bautheac.github.io/GICS/reference
   article: https://bautheac.github.io/GICS/articles

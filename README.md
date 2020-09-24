@@ -26,8 +26,7 @@ with 11 sectors and is followed by 24 industry groups, 68 industries,
 and 157 sub-industries. Each stock that is classified will have a coding
 at all four of these levels.
 
-Excerpt of the ‘standards’
-    dataset:
+Excerpt of the ‘standards’ dataset:
 
     #>   sector id sector name industry group id industry group name industry id
     #> 1        10      Energy              1010              Energy      101010
@@ -36,20 +35,13 @@ Excerpt of the ‘standards’
     #> 4        10      Energy              1010              Energy      101020
     #> 5        10      Energy              1010              Energy      101020
     #> 6        10      Energy              1010              Energy      101020
-    #>                 industry name subindustry id
-    #> 1 Energy Equipment & Services       10101010
-    #> 2 Energy Equipment & Services       10101020
-    #> 3 Oil, Gas & Consumable Fuels       10102010
-    #> 4 Oil, Gas & Consumable Fuels       10102020
-    #> 5 Oil, Gas & Consumable Fuels       10102030
-    #> 6 Oil, Gas & Consumable Fuels       10102040
-    #>                     subindustry name
-    #> 1                 Oil & Gas Drilling
-    #> 2     Oil & Gas Equipment & Services
-    #> 3               Integrated Oil & Gas
-    #> 4 Oil & Gas Exploration & Production
-    #> 5     Oil & Gas Refining & Marketing
-    #> 6 Oil & Gas Storage & Transportation
+    #>                 industry name subindustry id                   subindustry name
+    #> 1 Energy Equipment & Services       10101010                 Oil & Gas Drilling
+    #> 2 Energy Equipment & Services       10101020     Oil & Gas Equipment & Services
+    #> 3 Oil, Gas & Consumable Fuels       10102010               Integrated Oil & Gas
+    #> 4 Oil, Gas & Consumable Fuels       10102020 Oil & Gas Exploration & Production
+    #> 5 Oil, Gas & Consumable Fuels       10102030     Oil & Gas Refining & Marketing
+    #> 6 Oil, Gas & Consumable Fuels       10102040 Oil & Gas Storage & Transportation
     #>                                                                                                                                                                                                                                                               description
     #> 1                                                                                                                                                                         Drilling contractors or owners of drilling rigs that contract their services for drilling wells
     #> 2                                                                        Manufacturers of equipment, including drilling rigs and equipment, and providers of supplies and services to companies involved in the drilling, evaluation and completion of oil and gas wells.
