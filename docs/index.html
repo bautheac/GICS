@@ -47,7 +47,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/bautheac/GICS/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -68,34 +68,38 @@
 <a href="#gics" class="anchor"></a>GICS</h1></div>
 
 <style> body {text-align: justify} </style>
-<!-- README.md is generated from README.Rmd. Please edit that file --><p>GICS packages the Global Industry Classification Standard (GICS) dataset for consumption in R. Install the development version from <a href="https://github.com/bautheac/GICS/">github</a> using: <code><a href="https://devtools.r-lib.org//reference/remote-reexports.html">devtools::install_github("bautheac/GICS")</a></code>.<br>
-The GICS is a standardized classification system for equities developed jointly by Morgan Stanley Capital International (MSCI) and Standard &amp; Poor’s. The GICS methodology is used by the MSCI indexes, which include domestic and international stocks, as well as by a large portion of the professional investment management community. The GICS hierarchy begins with 11 sectors and is followed by 24 industry groups, 68 industries, and 157 sub-industries. Each stock that is classified will have a coding at all four of these levels.</p>
-<p>Excerpt of the ‘standards’ dataset:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#&gt;   sector id sector name industry group id industry group name industry id</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#&gt; 1        10      Energy              1010              Energy      101010</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">#&gt; 2        10      Energy              1010              Energy      101010</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#&gt; 3        10      Energy              1010              Energy      101020</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co">#&gt; 4        10      Energy              1010              Energy      101020</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#&gt; 5        10      Energy              1010              Energy      101020</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co">#&gt; 6        10      Energy              1010              Energy      101020</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co">#&gt;                 industry name subindustry id                   subindustry name</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="co">#&gt; 1 Energy Equipment &amp; Services       10101010                 Oil &amp; Gas Drilling</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">#&gt; 2 Energy Equipment &amp; Services       10101020     Oil &amp; Gas Equipment &amp; Services</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co">#&gt; 3 Oil, Gas &amp; Consumable Fuels       10102010               Integrated Oil &amp; Gas</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co">#&gt; 4 Oil, Gas &amp; Consumable Fuels       10102020 Oil &amp; Gas Exploration &amp; Production</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="co">#&gt; 5 Oil, Gas &amp; Consumable Fuels       10102030     Oil &amp; Gas Refining &amp; Marketing</span></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co">#&gt; 6 Oil, Gas &amp; Consumable Fuels       10102040 Oil &amp; Gas Storage &amp; Transportation</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a><span class="co">#&gt;                                                                                                                                                                                                                                                               description</span></span>
-<span id="cb1-16"><a href="#cb1-16"></a><span class="co">#&gt; 1                                                                                                                                                                         Drilling contractors or owners of drilling rigs that contract their services for drilling wells</span></span>
-<span id="cb1-17"><a href="#cb1-17"></a><span class="co">#&gt; 2                                                                        Manufacturers of equipment, including drilling rigs and equipment, and providers of supplies and services to companies involved in the drilling, evaluation and completion of oil and gas wells.</span></span>
-<span id="cb1-18"><a href="#cb1-18"></a><span class="co">#&gt; 3                                                                     Integrated oil companies engaged in the exploration &amp; production of oil and gas, as well as at least one other significant activity in either refining, marketing and transportation, or chemicals.</span></span>
-<span id="cb1-19"><a href="#cb1-19"></a><span class="co">#&gt; 4                                                                                                                                                                            Companies engaged in the exploration and production of oil and gas not classified elsewhere.</span></span>
-<span id="cb1-20"><a href="#cb1-20"></a><span class="co">#&gt; 5                                                                          Companies engaged in the refining and marketing of oil, gas and/or refined products not classified in the Integrated Oil &amp; Gas or Independent Power Producers &amp; Energy Traders Sub-Industries.</span></span>
-<span id="cb1-21"><a href="#cb1-21"></a><span class="co">#&gt; 6 Companies engaged in the storage and/or transportation of oil, gas and/or refined products. Includes diversified midstream natural gas companies facing competitive markets, oil and refined product pipelines, coal slurry pipelines and oil &amp; gas shipping companies.</span></span></code></pre></div>
+<!-- README.md is generated from README.Rmd. Please edit that file --><p><a href="https://bautheac.github.io/GICS/">GICS</a> packages the Global Industry Classification Standards (GICS) dataset for consumption in R. Install the development version from github using: <code><a href="https://devtools.r-lib.org//reference/remote-reexports.html">devtools::install_github("bautheac/GICS")</a></code>.</p>
+<p>The GICS is a standardized classification system for equities developed jointly by Morgan Stanley Capital International (MSCI) and Standard &amp; Poor’s. The GICS methodology is used by the MSCI indexes, which include domestic and international stocks, as well as by a large portion of the professional investment management community. The GICS hierarchy begins with 11 sectors and is followed by 24 industry groups, 68 industries, and 157 sub-industries. Each stock that is classified will have a coding at all four of these levels.</p>
+<p>The standards available in the <code>standards</code> dataset:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://bautheac.github.io/GICS">GICS</a></span><span class="op">)</span>
+
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">standards</span><span class="op">)</span>
+<span class="co">#&gt;   sector id sector name industry group id industry group name industry id</span>
+<span class="co">#&gt; 1        10      Energy              1010              Energy      101010</span>
+<span class="co">#&gt; 2        10      Energy              1010              Energy      101010</span>
+<span class="co">#&gt; 3        10      Energy              1010              Energy      101020</span>
+<span class="co">#&gt; 4        10      Energy              1010              Energy      101020</span>
+<span class="co">#&gt; 5        10      Energy              1010              Energy      101020</span>
+<span class="co">#&gt; 6        10      Energy              1010              Energy      101020</span>
+<span class="co">#&gt;                 industry name subindustry id                   subindustry name</span>
+<span class="co">#&gt; 1 Energy Equipment &amp; Services       10101010                 Oil &amp; Gas Drilling</span>
+<span class="co">#&gt; 2 Energy Equipment &amp; Services       10101020     Oil &amp; Gas Equipment &amp; Services</span>
+<span class="co">#&gt; 3 Oil, Gas &amp; Consumable Fuels       10102010               Integrated Oil &amp; Gas</span>
+<span class="co">#&gt; 4 Oil, Gas &amp; Consumable Fuels       10102020 Oil &amp; Gas Exploration &amp; Production</span>
+<span class="co">#&gt; 5 Oil, Gas &amp; Consumable Fuels       10102030     Oil &amp; Gas Refining &amp; Marketing</span>
+<span class="co">#&gt; 6 Oil, Gas &amp; Consumable Fuels       10102040 Oil &amp; Gas Storage &amp; Transportation</span>
+<span class="co">#&gt;                                                                                                                                                                                                                                                               description</span>
+<span class="co">#&gt; 1                                                                                                                                                                         Drilling contractors or owners of drilling rigs that contract their services for drilling wells</span>
+<span class="co">#&gt; 2                                                                        Manufacturers of equipment, including drilling rigs and equipment, and providers of supplies and services to companies involved in the drilling, evaluation and completion of oil and gas wells.</span>
+<span class="co">#&gt; 3                                                                     Integrated oil companies engaged in the exploration &amp; production of oil and gas, as well as at least one other significant activity in either refining, marketing and transportation, or chemicals.</span>
+<span class="co">#&gt; 4                                                                                                                                                                            Companies engaged in the exploration and production of oil and gas not classified elsewhere.</span>
+<span class="co">#&gt; 5                                                                          Companies engaged in the refining and marketing of oil, gas and/or refined products not classified in the Integrated Oil &amp; Gas or Independent Power Producers &amp; Energy Traders Sub-Industries.</span>
+<span class="co">#&gt; 6 Companies engaged in the storage and/or transportation of oil, gas and/or refined products. Includes diversified midstream natural gas companies facing competitive markets, oil and refined product pipelines, coal slurry pipelines and oil &amp; gas shipping companies.</span></code></pre></div>
 <div id="finres" class="section level3">
 <h3 class="hasAnchor">
 <a href="#finres" class="anchor"></a>finRes</h3>
-<p>Although GICS is self-contained with consumption value on its own, it belongs to <a href="https://bautheac.github.io/finRes/">finRes</a> where it helps with data wrangling and analysis.</p>
+<p>Although <a href="https://bautheac.github.io/GICS/">GICS</a> is self-contained it belongs to the <a href="https://bautheac.github.io/finRes/">finRes</a> suite of packages where it helps with data wrangling and analysis.</p>
 </div>
 </div>
   </div>
