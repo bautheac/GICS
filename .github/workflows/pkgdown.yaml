@@ -37,6 +37,11 @@ jobs:
           use-public-rspm: true
 
       - uses: r-lib/actions/setup-r-dependencies@v2
+        # pak reuses a cached build of a GitHub package whatever its commit or
+        # version, so a stale suite package from an earlier job would be
+        # installed. A cache under the job's temp folder starts empty.
+        env:
+          R_PKG_CACHE_DIR: ${{ runner.temp }}/pkgcache
         with:
           extra-packages: any::pkgdown, any::pkgload
           needs: website
