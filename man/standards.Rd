@@ -78,7 +78,7 @@ The Global Industry Classification Standard (GICS) system was
   strategic landscapes with greater insights.
 }
 \seealso{
-The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite; the
+The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite; the
   \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
   \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages in
   particular.
