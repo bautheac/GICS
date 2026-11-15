@@ -1,0 +1,77 @@
+name: pkgdown
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: pkgdown
+  # Queue rather than cancel: an in-flight `rsync --delete` interrupted
+  # mid-transfer would leave the live site partially deleted.
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    # The pkgdown-deploy environment's branch policy (repo settings) is the
+    # real gate; this `if` only guards the accidental case.
+    if: github.ref == 'refs/heads/master'
+    environment: pkgdown-deploy
+    runs-on: [self-hosted, Linux, X64]
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::pkgdown, any::pkgload
+          needs: website
+
+      - name: Build pkgdown site
+        # The articles read the synthetic database in inst/extdata, so they
+        # render without Bloomberg.
+        shell: Rscript {0}
+        run: |
+          ov <- list(destination = "pkgdown-site")
+          pkgdown::init_site(override = ov)
+          pkgdown::build_home(override = ov)
+          pkgdown::build_reference(override = ov)
+          pkgdown::build_articles(override = ov)
+          pkgdown::build_news(override = ov)
+
+      - name: Deploy pkgdown site
+        # The key's forced rrsync command on the dev-sites host confines it
+        # to /srv/dev-sites/GICS; StrictHostKeyChecking=yes trusts only the
+        # host key already in the runner's known_hosts.
+        run: |
+          rsync \
+            --archive \
+            --delete \
+            --verbose \
+            -e "ssh -i /home/github-actions/.ssh/gics_deploy -o StrictHostKeyChecking=yes" \
+            pkgdown-site/ \
+            gics-deploy@192.168.0.55:/
+
+      - name: Verify deployment
+        run: |
+          curl \
+            --fail \
+            --silent \
+            --show-error \
+            --retry 5 \
+            --retry-delay 2 \
+            https://dev.bautheac.net/GICS/ >/dev/null
