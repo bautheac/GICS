@@ -7,7 +7,7 @@ GICS
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[GICS](https://bautheac.github.io/GICS/) packages the Global Industry
+[GICS](https://dev.bautheac.net/GICS/) packages the Global Industry
 Classification Standards (GICS) dataset for consumption in R. Install
 the development version from github using:
 `devtools::install_github("bautheac/GICS")`.
@@ -52,6 +52,6 @@ head(standards)
 
 ### finRes
 
-Although [GICS](https://bautheac.github.io/GICS/) is self-contained it
-belongs to the [finRes](https://bautheac.github.io/finRes/) suite of
+Although [GICS](https://dev.bautheac.net/GICS/) is self-contained it
+belongs to the [finRes](https://dev.bautheac.net/finRes/) suite of
 packages where it helps with data wrangling and analysis.

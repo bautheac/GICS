@@ -70,7 +70,7 @@
 #' @source \url{https://www.msci.com}
 #'
 #'
-#' @seealso The \href{https://bautheac.github.io/finRes/}{\pkg{finRes}} suite; the
+#' @seealso The \href{https://dev.bautheac.net/finRes/}{\pkg{finRes}} suite; the
 #'   \href{https://github.com/bautheac/pullit/}{\pkg{pullit}} and
 #'   \href{https://github.com/bautheac/storethat/}{\pkg{storethat}} packages in
 #'   particular.
