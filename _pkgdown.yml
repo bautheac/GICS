@@ -2,16 +2,15 @@ title: GICS
 
 url: https://dev.bautheac.net/GICS
 
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "Source Sans Pro"}
+    heading_font: {google: "Source Sans Pro"}
+    code_font: {google: "Source Code Pro"}
+    font-size-base: 1.25rem
+
 reference:
   - title: Global Industry Classification Standard dataset
     contents:
       - standards
-
-navbar:
-  title: ~
-  type: default
-  left:
-    - text: home
-      href: index.html
-    - text: datasets
-      href: reference/index.html
