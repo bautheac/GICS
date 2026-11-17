@@ -1,7 +1,5 @@
 ^docs$
 ^_pkgdown\.yml$
-^appveyor\.yml$
-^\.travis\.yml$
 ^LICENSE\.md$
 ^data-raw$
 ^.*\.Rproj$
