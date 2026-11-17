@@ -38,3 +38,10 @@
     padding: 0.5rem 0;
   }
 }
+
+/* Something sets an inline padding-top on <body> (the navbar height measured
+   before the web font loads), adding ~55px above the page. The navbar is
+   fixed and <main> already clears it, so the padding is never needed. */
+body {
+  padding-top: 0 !important;
+}
